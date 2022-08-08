@@ -16,7 +16,7 @@ export default {
         return{
             preferences: {
                 preferenceId: 0,
-                preferenceType: "5"
+                preferenceType: ""
             }
         }
     },
