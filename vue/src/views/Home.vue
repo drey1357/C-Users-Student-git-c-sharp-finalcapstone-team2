@@ -6,6 +6,7 @@
    <preferences-table/>
     <button>setup matching sessions</button>
     <button>find new restaurants</button>
+
   </div>
 </template>
 
@@ -20,6 +21,8 @@ export default {
 </script>
 
 <style>
+.home{
+  text-align: center;
+}
 
-</sty
-    PreferencesTablele>
+</style>
