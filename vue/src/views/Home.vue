@@ -25,4 +25,9 @@ export default {
   text-align: center;
 }
 
+#app > div.home > h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+}
+
 </style>
