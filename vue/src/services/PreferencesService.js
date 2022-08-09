@@ -6,7 +6,7 @@ const http = axios.create({
 
 export default {
     getPreferencesByUserId(){
-        return http.get("/preferences/3"); 
+        return http.get("/preferences/5"); 
     }
   
 
