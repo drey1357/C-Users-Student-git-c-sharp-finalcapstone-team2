@@ -1,46 +1,59 @@
 <template>
+<div class="entire">
   <div id="app">
-    <div id="nav">
+   
+    
+    <div class="grid-container">
+      <img class="monster" src="https://www.clipartmax.com/png/full/154-1541145_fork-knife-comments-fork-and-knife-png.png" alt="Byte Logo"/>
+      <h1 id="name">BYTE</h1>
+      <!-- <img class="monster" src="https://www.clipartmax.com/png/full/154-1541145_fork-knife-comments-fork-and-knife-png.png"/>
+    <h1 id="name">BYTE</h1> -->
+     <div id="nav">
       <router-link v-bind:to="{ name: 'home'}">Home</router-link>&nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
       
     </div>
-    <div class="flex-container">
-      <img class="monster" src="https://img.freepik.com/premium-vector/cute-monster-eating-pizza-cartoon-vector-illustration_607277-212.jpg?w=2000"/>
-      
-    <h1 id="name">BYTE</h1>
     </div>
     <router-view />
+  </div>
   </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
-.flex-container{
-  display: flex;
+body{
+ width: 100vw;
+ min-height: 100vh; 
+ background-image: url("https://media.timeout.com/images/105843871/image.jpg");
+ background-size: cover;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: floralwhite;
+  margin-left: auto;
+  margin-right:auto;
+  width: 75%;
+  height: 100%;
+
  
-
 }
 .monster{
-  width: 125px;
-  height: 125px;
+  width: 75px;
+  height: 75px;
 }
 
 #name{
-  float: left;
-  font-family:  'Press Start 2P', cursive;
+  font-family:  'Play', sans-serif;
+  text-align: center;
 
 }
 #nav{
-  text-align: end;
-  font-family:  'Press Start 2P', cursive;
+  font-family:  'Play', sans-serif;
   font-size: 13px;
-}
-
-#app > div.home > div > table{
-  
-  margin: auto;
+  text-align: right;
 }
 
 </style>
