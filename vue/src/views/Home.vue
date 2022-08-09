@@ -4,8 +4,11 @@
     <p> <em> If you can see this, you are authenticated </em></p>
     <p>welcome {{this.$store.state.user.username}}!</p>
    <preferences-table/>
+
     <button>setup matching sessions</button>
     <button>find new restaurants</button>
+    <p>recommended restaurants:</p>
+
 
   </div>
 </template>
