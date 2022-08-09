@@ -12,7 +12,7 @@
         role="alert"
         v-if="this.$route.query.registration"
       >Thank you for registering, please sign in.</div>
-      <label for="username" class="sr-only">Username</label>
+      <!-- <label for="username" class="sr-only">Username</label> -->
       <input
         type="text"
         id="username"
@@ -24,7 +24,7 @@
       />
       <br/>
       <br/>
-      <label for="password" class="sr-only">Password</label>
+      <!-- <label for="password" class="sr-only">Password</label> -->
       <input
         type="password"
         id="password"
@@ -36,6 +36,8 @@
       <br/>
       <br/>
       <router-link :to="{ name: 'register' }">Need an account?</router-link>
+      <br/>
+      <br/>
       <button type="submit">Sign in</button>
     </form>
   </div>
@@ -80,8 +82,41 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 #login{
   text-align: center;
+}
+
+#login > form > h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+}
+#login > form > a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 9px;
+}
+
+#app > div.home > button:nth-child(5){
+  border: solid;
+  border-width: .5px;
+  border-radius: 15px;
+  border-color: lightgray;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+#app > div.home > button:nth-child(6){
+  border: solid;
+  border-width: .25px;
+  border-radius: 15px;
+  border-color: lightgray;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
 }
 
 </style>
