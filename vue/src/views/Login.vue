@@ -82,22 +82,30 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 #login{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right:auto;
+  width: 75%;
+  height: 75%;
+  background-color: floralwhite;
   text-align: center;
+  
 }
 
 #login > form > h1{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Play', sans-serif;
   font-size: 15px;
+  text-align: center;
 }
 #login > form > a{
-  font-family: 'Press Start 2P', cursive;
-  font-size: 9px;
+  font-family: 'Play', sans-serif;
+  font-size: 12px;
 }
 
-#login > form > button{
+/* #login > form > button{
   border: solid;
   border-width: .25px;
   border-radius: 15px;
@@ -112,7 +120,7 @@ export default {
 
 #login > form > button:hover{
   background-color: darkgray;
-}
+} */
 
 
 </style>
