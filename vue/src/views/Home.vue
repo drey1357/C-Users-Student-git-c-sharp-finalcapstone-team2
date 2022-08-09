@@ -32,5 +32,36 @@ export default {
   font-family: 'Press Start 2P', cursive;
   font-size: 20px;
 }
+#app > div.home > button:nth-child(5){
+  border: solid;
+  border-width: .25px;
+  border-radius: 15px;
+  border-color: lightgray;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  width: 200px;
+}
+#app > div.home > button:nth-child(6){
+  border: solid;
+  border-width: .25px;
+  border-radius: 15px;
+  border-color: lightgray;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  width: 200px;
+}
 
+#app > div.home > button:nth-child(5):hover{
+ 
+  background-color: darkgray;
+}
+#app > div.home > button:nth-child(6):hover{
+
+  background-color: darkgray;
+}
 </style>

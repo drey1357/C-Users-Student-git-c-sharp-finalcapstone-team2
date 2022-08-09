@@ -97,9 +97,9 @@ export default {
   font-size: 9px;
 }
 
-#app > div.home > button:nth-child(5){
+#login > form > button{
   border: solid;
-  border-width: .5px;
+  border-width: .25px;
   border-radius: 15px;
   border-color: lightgray;
   margin-right: 5px;
@@ -107,16 +107,12 @@ export default {
   padding-left: 15px;
   padding-bottom: 5px;
   padding-right: 15px;
+ 
 }
-#app > div.home > button:nth-child(6){
-  border: solid;
-  border-width: .25px;
-  border-radius: 15px;
-  border-color: lightgray;
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  padding-right: 15px;
+
+#login > form > button:hover{
+  background-color: darkgray;
 }
+
 
 </style>
