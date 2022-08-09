@@ -16,9 +16,9 @@ namespace Capstone.DAO
             connectionString = dbConnectionString;
         }
 
-        public Preferences GetPreferencesbyUser(int userId)
+        public List<Preferences> GetPreferencesbyUser(int userId)
         {
-            Preferences preferences = new Preferences();
+            List<Preferences> allPreferencesByUser = new List<Preferences>();
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -28,13 +28,15 @@ namespace Capstone.DAO
                 cmd.Parameters.AddWithValue("@user_id", userId);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read())
+                while (reader.Read())
                 {
+                    Preferences preferences = new Preferences();
                     preferences = GetPreferencesFromReader(reader);
+                    allPreferencesByUser.Add(preferences);
                 }
             }
 
-            return preferences;
+            return allPreferencesByUser;
         }
         /////////////////////////////
         private Preferences GetPreferencesFromReader(SqlDataReader reader)

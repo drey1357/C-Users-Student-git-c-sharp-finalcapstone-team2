@@ -2,7 +2,7 @@
   <div>
        <table name="preferences">
         <thead>preferences (will read from database)</thead>
-        <tr>{{this.preferences.preferenceType}}</tr>
+        <tr v-for="preference in preferences" v-bind:key="preference.preferenceId"> {{preference.preferenceType}}</tr>
         </table>
   </div>
 </template>
@@ -14,10 +14,10 @@ export default {
     name: "preferences-table",
     data(){
         return{
-            preferences: {
+            preferences: [{
                 preferenceId: 0,
                 preferenceType: ""
-            }
+            }]
         }
     },
     created(){

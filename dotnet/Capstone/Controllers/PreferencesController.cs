@@ -26,8 +26,8 @@ namespace Capstone.Controllers
         [HttpGet("{userId}")]
         public ActionResult<Preferences> GetPreferencesbyUser(int userId)
         {
-            Preferences preferences = preferencesDAO.GetPreferencesbyUser(userId);
-            return Ok(preferences);
+            List<Preferences> allPreferences = preferencesDAO.GetPreferencesbyUser(userId);
+            return Ok(allPreferences);
         }
     }
 }

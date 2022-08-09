@@ -8,6 +8,6 @@ namespace Capstone.DAO
 {
     public interface IPreferencesDAO
     {
-        Preferences GetPreferencesbyUser(int userId);
+        List<Preferences> GetPreferencesbyUser(int userId);
     }
 }
