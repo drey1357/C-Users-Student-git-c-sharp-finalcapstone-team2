@@ -42,8 +42,12 @@ namespace Capstone.DAO
         private Preferences GetPreferencesFromReader(SqlDataReader reader)
         {
             Preferences p = new Preferences();
+            Category c = new Category();
+
             p.PreferenceId = Convert.ToInt32(reader["preference_id"]);
-            p.PreferenceType = Convert.ToString(reader["preference_type"]);
+            c.alias = Convert.ToString(reader["preference_type"]);
+            c.title = null;
+            p.PreferenceType = c;
 
             return p;
         }
