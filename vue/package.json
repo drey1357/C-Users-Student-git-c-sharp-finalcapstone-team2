@@ -14,13 +14,9 @@
     "core-js": "^3.9.1",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1",
-<<<<<<< HEAD
     "vuex": "^3.6.2",
     "yelp-fusion": "^3.0.0"
-=======
-    "vue2-google-maps": "^0.10.7",
-    "vuex": "^3.6.2"
->>>>>>> f3ce64d7000b42271e4615c1dc66d8ef3d7dac5c
+
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.11",

@@ -2,7 +2,7 @@
   <div>
        <table name="preferences">
         <th>Your Preferences</th>
-        <tr v-for="preference in preferences" v-bind:key="preference.preferenceId"> {{preference.preferenceType}}</tr>
+        <tr v-for="preference in preferences" v-bind:key="preference.preferenceId"> {{preference.preferenceType.alias}}</tr>
 
         </table>
   </div>
