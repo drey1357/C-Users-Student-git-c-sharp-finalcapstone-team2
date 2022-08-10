@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import YelpAPIService from "@/services/YelpAPIService.js"
 
 export default {
     name: "restaurant-card",
@@ -63,12 +62,6 @@ export default {
     }
         }
     },
-    created(){
-        YelpAPIService.getRestaurants().then((response) => {
-        let data = response.data;
-        this.restaurants = data;
-        });
-    }
 
 
 }
