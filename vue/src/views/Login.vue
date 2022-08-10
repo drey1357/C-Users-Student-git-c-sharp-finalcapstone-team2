@@ -40,6 +40,10 @@
       <br/>
       <button type="submit">Sign in</button>
     </form>
+
+    <div class="copy">
+&copy; 2022 DDMS Business Solutions
+</div>
   </div>
 </template>
 
@@ -89,7 +93,7 @@ export default {
   margin-left: auto;
   margin-right:auto;
   width: 75%;
-  height: 75%;
+  height: 100vh;
   background-color: floralwhite;
   text-align: center;
   
@@ -103,6 +107,14 @@ export default {
 #login > form > a{
   font-family: 'Lusitana', serif;
   font-size: 12px;
+}
+
+#login > div{
+  position: fixed;
+    bottom:5px;
+    width: 100%;
+    left:0px;
+    height:25px;
 }
 
 /* #login > form > button{

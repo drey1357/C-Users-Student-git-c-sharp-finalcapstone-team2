@@ -8,10 +8,11 @@
    <br/>
    <div>
 
-    <button>Set Up Matching Sessions</button>
+    
     <a href="http://localhost:8080/findrestaurants">
    <button>Find New Restaurants</button>
    </a>
+   <button>Send An Invite</button>
     <p>Recommended Restaurants:</p>
     
 

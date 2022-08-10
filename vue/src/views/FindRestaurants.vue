@@ -2,7 +2,7 @@
 <div class="flex-container2">
   <div class="home">
     <h1>Find Restaurants Near You</h1>
-    
+
    <div>
     <a href="http://localhost:8080">
    <button>Return Home</button>
@@ -18,8 +18,10 @@
 </template>
 
 <script>
+
 export default {
-    name: "find-restaurants"
+    name: "find-restaurants",
+   
 
 }
 </script>
