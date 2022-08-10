@@ -8,6 +8,7 @@
     <button>setup matching sessions</button>
     <button>find new restaurants</button>
     <p>recommended restaurants:</p>
+    <restaurant-card/>
 
 
   </div>
@@ -15,10 +16,13 @@
 
 <script>
 import PreferencesTable from "@/components/PreferencesTable.vue";
+import RestaurantCard from '@/components/RestaurantCard.vue';
+
 export default {
   name: "home",
   components:{
-    PreferencesTable
+    PreferencesTable,
+    RestaurantCard
   }
 };
 </script>

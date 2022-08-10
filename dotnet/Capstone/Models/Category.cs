@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Capstone.Models
 {
-    public class Preferences
+    public class Category
     {
-        public int PreferenceId { get; set; }
-        public Category PreferenceType { get; set; }
+        public string alias { get; set; }
+        public string title { get; set; }
     }
 }
