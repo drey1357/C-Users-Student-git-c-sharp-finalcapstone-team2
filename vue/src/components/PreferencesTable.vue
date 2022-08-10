@@ -1,8 +1,9 @@
 <template>
   <div>
        <table name="preferences">
-        <thead>preferences (will read from database)</thead>
-        <tr v-for="preference in preferences" v-bind:key="preference.preferenceId"> {{preference.preferenceType.alias}}</tr>
+        <th>Your Preferences</th>
+        <tr v-for="preference in preferences" v-bind:key="preference.preferenceId"> {{preference.preferenceType}}</tr>
+
         </table>
   </div>
 </template>
@@ -30,5 +31,8 @@ export default {
 </script>
 
 <style>
+#app > div.flex-container2 > div > div:nth-child(4) > table{
+    align-items: center;
+}
 
 </style>

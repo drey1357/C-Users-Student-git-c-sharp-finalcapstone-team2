@@ -1,5 +1,5 @@
 <template>
-<div class="entire">
+<div>
   <div id="app">
    
     
@@ -16,6 +16,9 @@
     </div>
     <router-view />
   </div>
+  <div class="copy">
+&copy; 2022 DDMS Business Solutions
+</div>
   </div>
 </template>
 
@@ -48,12 +51,14 @@ body{
 #name{
   font-family:  'Play', sans-serif;
   text-align: center;
+  font-size: 50px;
 
 }
 #nav{
-  font-family:  'Play', sans-serif;
-  font-size: 13px;
+  font-family:  'Lusitana', serif;
+  font-size: 15px;
   text-align: right;
+  color: black;
 }
 
 </style>
