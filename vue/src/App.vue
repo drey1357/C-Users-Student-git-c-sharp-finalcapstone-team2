@@ -16,6 +16,9 @@
     </div>
     <router-view />
   </div>
+  <div class="copy">
+&copy; 2022 DDMS Business Solutions
+</div>
   </div>
 </template>
 

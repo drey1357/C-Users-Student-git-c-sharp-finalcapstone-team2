@@ -45,6 +45,9 @@
         Create Account
       </button>
     </form>
+    <div class="copy">
+&copy; 2022 DDMS Business Solutions
+</div>
   </div>
 </template>
 
@@ -102,17 +105,37 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+.text-center{
+  display: flex;
+  justify-content: center;
+  background-color: floralwhite;
+  margin-left: auto;
+  margin-right:auto;
+  width: 75%;
+  height: 100vh;
+}
+
 #register{
   text-align: center;
 }
 
 #register > form > h1{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Lusitana', serif;
   font-size: 15px;
 }
 
 #register > form > a{
-  font-family: 'Press Start 2P', cursive;
-  font-size: 9px;
+  font-family: 'Lusitana', serif;
+  font-size: 12
+  px;
+}
+
+#register > div{
+
+  position: fixed;
+    bottom:5px;
+    width: 100%;
+    left:0px;
+    height:25px;
 }
 </style>
