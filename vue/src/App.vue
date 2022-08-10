@@ -1,5 +1,5 @@
 <template>
-<div class="entire">
+<div>
   <div id="app">
    
     
@@ -48,12 +48,14 @@ body{
 #name{
   font-family:  'Play', sans-serif;
   text-align: center;
+  font-size: 50px;
 
 }
 #nav{
-  font-family:  'Play', sans-serif;
-  font-size: 13px;
+  font-family:  'Lusitana', serif;
+  font-size: 15px;
   text-align: right;
+  color: black;
 }
 
 </style>

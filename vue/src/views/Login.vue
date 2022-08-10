@@ -96,12 +96,12 @@ export default {
 }
 
 #login > form > h1{
-  font-family: 'Play', sans-serif;
+  font-family: 'Lusitana', serif;
   font-size: 15px;
   text-align: center;
 }
 #login > form > a{
-  font-family: 'Play', sans-serif;
+  font-family: 'Lusitana', serif;
   font-size: 12px;
 }
 
